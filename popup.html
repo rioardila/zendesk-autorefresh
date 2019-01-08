@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: #EC9940;
+        color: #FFFFFF;
+      }
+      label {
+        margin: 20px auto;
+      }
+      #refreshTimeInput {
+        margin-top: 10px;
+      }
+      button {
+        margin: 20px auto 10px auto;
+        height: 30px;
+        outline: none;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <label>
+      Current refresh time (s): <strong id="currentTime"></strong>
+    </label><br /><br />
+    <label>
+      New refresh time (s): <input type="number" name="refreshTimeInput" id="refreshTimeInput" />
+    </label>
+    <button id="save">Save</button>
+    <script src="popup.js"></script>
+  </body>
+</html>
