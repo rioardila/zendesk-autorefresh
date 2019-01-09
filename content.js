@@ -2,7 +2,11 @@ var currentInterval
 
 function setNewInterval(intervalTime) {
   currentInterval = setInterval(() => {
-    document.querySelector("#wrapper #main_panes .left h1 .action_button").click()
+    //Check if chat is open
+    var chatElement = document.getElementById("ember2079")
+    if (chatElement !== null && !chatElement.classList.contains("active")) {
+      document.querySelector("#wrapper #main_panes .left h1 .action_button").click()
+    }
   }, intervalTime * 1000);
 }
 
